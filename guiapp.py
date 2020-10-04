@@ -2,8 +2,9 @@
 import pygame
 import time
 pygame.font.init()
-
-
+# latest edit 
+# puts value to the grid
+# Name: Vea Banga 
 class Grid:
     board = [
         [7, 8, 0, 4, 0, 0, 1, 2, 0],
@@ -16,7 +17,7 @@ class Grid:
         [1, 2, 0, 0, 0, 7, 4, 0, 0],
         [0, 4, 9, 2, 0, 6, 0, 0, 7]
     ]
-
+  # initialisation
     def __init__(self, rows, cols, width, height, win):
         self.rows = rows
         self.cols = cols
@@ -27,7 +28,8 @@ class Grid:
         self.update_model()
         self.selected = None
         self.win = win
-
+        
+#updation of model
     def update_model(self):
         self.model = [[self.cubes[i][j].value for j in range(self.cols)] for i in range(self.rows)]
 
@@ -320,7 +322,6 @@ def main():
             
         redraw_window(win, board, play_time, strikes)
         pygame.display.update()
-
 
 main()
 pygame.quit()

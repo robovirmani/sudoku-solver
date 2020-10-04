@@ -1,6 +1,7 @@
 # guiapp.py
 import pygame
 import time
+# Tanmay Gupta
 pygame.font.init()
 
 

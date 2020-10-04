@@ -1,5 +1,9 @@
 # guiapp.py
 import pygame
+import many as np
+# new edit
+import PIL
+# naman bhayana
 import time
 pygame.font.init()
 

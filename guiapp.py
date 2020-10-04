@@ -1,7 +1,11 @@
 # guiapp.py
 import pygame
 import time
+
+
 pygame.font.init()
+#shady
+
 
 
 class Grid:

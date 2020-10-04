@@ -1,6 +1,10 @@
 # guiapp.py
 import pygame
 import time
+import numpy as np
+#changing
+#nice work
+#Muskan
 pygame.font.init()
 
 
@@ -17,7 +21,7 @@ class Grid:
         [0, 4, 9, 2, 0, 6, 0, 0, 7]
     ]
 
-    def __init__(self, rows, cols, width, height, win):
+    def __init__(self, rows, cols, width, height, win):#defining a class
         self.rows = rows
         self.cols = cols
         self.cubes = [[Cube(self.board[i][j], i, j, width, height) for j in range(cols)] for i in range(rows)]

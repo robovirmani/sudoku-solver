@@ -2,7 +2,8 @@
 import pygame
 import time
 pygame.font.init()
-
+# RAMESH KUMAR
+print("HEY BUDDY , FEELING BORED LETS PLAY AN INTERSTING GAME")
 
 class Grid:
     board = [

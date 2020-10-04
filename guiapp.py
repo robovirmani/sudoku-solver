@@ -2,7 +2,8 @@
 import pygame
 import time
 pygame.font.init()
-
+#DIVIJA
+import PIL
 
 class Grid:
     board = [

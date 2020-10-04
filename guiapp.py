@@ -1,6 +1,12 @@
 # guiapp.py
 import pygame
 import time
+
+#This is a comment for hacktoberfest'20
+import PIL
+#Swarup Basak
+print("Hello World")
+
 pygame.font.init()
 
 
@@ -142,6 +148,10 @@ class Grid:
                 self.cubes[row][col].draw_change(self.win, False)
                 pygame.display.update()
                 pygame.time.delay(100)
+                
+                #edit for hacktoberfest
+                print(row)
+                print(col)
 
         return False
 

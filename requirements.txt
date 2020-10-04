@@ -1,1 +1,6 @@
 pygame
+#include<stdio.h>
+int main()
+{
+printf(" HELLO < WELCOME TO GIT HUB");
+}

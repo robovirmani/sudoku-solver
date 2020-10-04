@@ -1,4 +1,5 @@
 # guiapp.py
+# this is a program to solve sudoku
 import pygame
 import time
 pygame.font.init()
@@ -319,8 +320,8 @@ def main():
             board.sketch(key)
             
         redraw_window(win, board, play_time, strikes)
-        pygame.display.update()
+        pygame.display.update() 
 
 
 main()
-pygame.quit()
+pygame.quit() #to quit the game

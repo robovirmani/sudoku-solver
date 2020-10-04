@@ -1,8 +1,9 @@
 # guiapp.py
 import pygame
 import time
+#new edited by ISHAN
 pygame.font.init()
-
+print("hello") 
 
 class Grid:
     board = [

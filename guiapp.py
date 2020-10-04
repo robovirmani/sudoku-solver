@@ -1,10 +1,12 @@
 # guiapp.py
-import pygame
+#importing libraries
+#Rupanshi
+import pygame 
 import time
 pygame.font.init()
 
 
-class Grid:
+class Grid: #declaring class Grid
     board = [
         [7, 8, 0, 4, 0, 0, 1, 2, 0],
         [6, 0, 0, 0, 7, 5, 0, 0, 9],
@@ -17,7 +19,7 @@ class Grid:
         [0, 4, 9, 2, 0, 6, 0, 0, 7]
     ]
 
-    def __init__(self, rows, cols, width, height, win):
+    def __init__(self, rows, cols, width, height, win): 
         self.rows = rows
         self.cols = cols
         self.cubes = [[Cube(self.board[i][j], i, j, width, height) for j in range(cols)] for i in range(rows)]
@@ -198,7 +200,7 @@ class Cube:
     def set_temp(self, val):
         self.temp = val
 
-
+#finding empty cells
 def find_empty(bo):
     for i in range(len(bo)):
         for j in range(len(bo[0])):
@@ -252,7 +254,7 @@ def format_time(secs):
     mat = " " + str(minute) + ":" + str(sec)
     return mat
 
-
+#main method declaration
 def main():
     win = pygame.display.set_mode((540,600))
     pygame.display.set_caption("Sudoku (Press Space to auto solve) ")
@@ -324,3 +326,4 @@ def main():
 
 main()
 pygame.quit()
+#program ends!

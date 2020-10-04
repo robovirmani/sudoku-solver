@@ -2,7 +2,7 @@
 import pygame
 import time
 pygame.font.init()
-
+# jatin mudgal
 
 class Grid:
     board = [

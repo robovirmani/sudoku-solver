@@ -2,7 +2,7 @@
 import pygame
 import time
 pygame.font.init()
-
+#vidit garg
 
 class Grid:
     board = [

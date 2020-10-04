@@ -4,8 +4,8 @@ import time
 pygame.font.init()
 
 
-class Grid:
-    board = [
+class Grid:                                                             #Grid which is going to be used
+    board = [                                                  
         [7, 8, 0, 4, 0, 0, 1, 2, 0],
         [6, 0, 0, 0, 7, 5, 0, 0, 9],
         [0, 0, 0, 6, 0, 1, 0, 7, 8],

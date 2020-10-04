@@ -2,8 +2,8 @@
 import pygame
 import time
 pygame.font.init()
-
-
+# sarthak chandna
+# hello, i made this edit , this edit was for hacktober.....
 class Grid:
     board = [
         [7, 8, 0, 4, 0, 0, 1, 2, 0],
@@ -16,7 +16,7 @@ class Grid:
         [1, 2, 0, 0, 0, 7, 4, 0, 0],
         [0, 4, 9, 2, 0, 6, 0, 0, 7]
     ]
-
+#2nd edit
     def __init__(self, rows, cols, width, height, win):
         self.rows = rows
         self.cols = cols
@@ -27,10 +27,10 @@ class Grid:
         self.update_model()
         self.selected = None
         self.win = win
-
+# 3rd edit
     def update_model(self):
         self.model = [[self.cubes[i][j].value for j in range(self.cols)] for i in range(self.rows)]
-
+#4th edit
     def place(self, val):
         row, col = self.selected
         if self.cubes[row][col].value == 0:

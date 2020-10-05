@@ -299,14 +299,14 @@ def main():
                     i, j = board.selected
                     if board.cubes[i][j].temp != 0:
                         if board.place(board.cubes[i][j].temp):
-                            print("Success")
+                            print("CONGRATULATIONS!! , YOU HAD SUCCESFULLY BEATS THE DIFFICULITY OF THIS GAME") #rewriting the print statement for win.
                         else:
-                            print("Wrong")
+                            print("WRONG ONE, TRY WITH ANOTHER MOVE")#rewriting the wrong statement.
                             strikes += 1
                         key = None
 
                         if board.is_finished():
-                            print("Game over")
+                            print("OOPS!! , YOU ARE A LITTLE BIT CONFUSE. YOU HAD LOST IT")#rewriting the print statement for loose.
 
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()

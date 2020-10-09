@@ -1,7 +1,7 @@
 # guiapp.py
 import pygame
 import time
-pygame.font.init()
+pygame.font.init(aviral)
 
 
 class Grid:

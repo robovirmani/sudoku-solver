@@ -1,8 +1,9 @@
 # guiapp.py
+#Sudoku Ssolver
 import pygame
 import time
-pygame.font.init()
 
+pygame.font.init()
 
 class Grid:
     board = [

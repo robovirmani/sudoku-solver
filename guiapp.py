@@ -244,7 +244,7 @@ def find_empty(board):
                     pos = (i,j)
 
 
-    if(min == 10):
+    if(minv == 10):
         return (None,None,flag)
 
     return (minn,pos,flag)

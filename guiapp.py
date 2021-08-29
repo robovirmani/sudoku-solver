@@ -100,13 +100,17 @@ class Grid:
         return True
 
     def solve(self):
-        find = find_empty(self.model)
-        if not find:
-            return True
-        else:
-            row, col = find
+        li,pos,flag = find_empty(self.model)
 
-        for i in range(1, 10):
+        if flag == 0:
+            return True
+
+        if not pos:
+            return False
+        
+        row,col = pos
+
+        for i in li:
             if valid(self.model, i, (row, col)):
                 self.model[row][col] = i
 
@@ -118,13 +122,17 @@ class Grid:
         return False
 
     def solve_gui(self):
-        find = find_empty(self.model)
-        if not find:
-            return True
-        else:
-            row, col = find
+        li,pos,flag = find_empty(self.model)
 
-        for i in range(1, 10):
+        if flag == 0:
+            return True
+
+        if not pos:
+            return False
+        
+        row,col = pos
+
+        for i in li:
             if valid(self.model, i, (row, col)):
                 self.model[row][col] = i
                 self.cubes[row][col].set(i)
@@ -199,13 +207,47 @@ class Cube:
         self.temp = val
 
 
-def find_empty(bo):
-    for i in range(len(bo)):
-        for j in range(len(bo[0])):
-            if bo[i][j] == 0:
-                return (i, j)  # row, col
+full = {0,1,2,3,4,5,6,7,8,9}
 
-    return None
+def best(board,i,j):
+    excluded = {0}
+    for row in range(len(board)):
+        excluded.add(board[row][j])
+
+    for col in range(len(board)):
+        excluded.add(board[i][col])
+
+    i -= i%3
+    j -= j%3
+
+    for row in range(int(len(board)/3)):
+        for col in range(int(len(board)/3)):
+            excluded.add(board[i+row][j+col])
+
+    left = full.difference(excluded)
+    return left
+
+
+def find_empty(board):
+    minv = 10
+    minn = set()
+    pos = ()
+    flag = 0
+    for i in range(len(board)):
+        for j in range(len(board[0])):
+            if board[i][j] == 0:
+                flag = 1
+                numbers = best(board,i,j)
+                if(minv > len(numbers) and len(numbers) > 0):
+                    minv = len(numbers)
+                    minn = numbers
+                    pos = (i,j)
+
+
+    if(min == 10):
+        return (None,None,flag)
+
+    return (minn,pos,flag)
 
 
 def valid(bo, num, pos):

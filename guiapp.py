@@ -1,6 +1,9 @@
 # guiapp.py
 import pygame
 import time
+# edit 
+# omisha
+#edit
 pygame.font.init()
 
 

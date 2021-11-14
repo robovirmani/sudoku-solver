@@ -2,7 +2,7 @@
 import pygame
 import time
 pygame.font.init()
-
+# Siddhant Sharma
 
 class Grid:
     board = [

@@ -1,6 +1,9 @@
 # guiapp.py
 import pygame
 import time
+#soduku program at python..
+#shreyansh.
+print("Hello")
 pygame.font.init()
 
 

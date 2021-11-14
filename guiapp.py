@@ -2,6 +2,9 @@
 import pygame
 import time
 pygame.font.init()
+print("HEYO, THANKS FOR THIS SESSION")
+# JUST MY KIND REGARDS 
+#TEJASVI S JAIN
 
 
 class Grid:

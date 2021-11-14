@@ -2,7 +2,7 @@
 import pygame
 import time
 pygame.font.init()
-
+# YATIN .toh kese hain aap log ?
 
 class Grid:
     board = [

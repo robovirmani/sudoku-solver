@@ -2,7 +2,8 @@
 import pygame
 import time
 pygame.font.init()
-
+# i made it
+print("hello)
 
 class Grid:
     board = [

@@ -1,6 +1,12 @@
 # guiapp.py
 import pygame
 import time
+import hello 
+#new style
+#chayan
+import tkss
+#newdefine
+print("WELCOME")
 pygame.font.init()
 
 

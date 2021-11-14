@@ -1,4 +1,5 @@
 # guiapp.py
+#I am here for hacktober fest 2020
 import pygame
 import time
 pygame.font.init()

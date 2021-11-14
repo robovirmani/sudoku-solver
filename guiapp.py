@@ -1,6 +1,10 @@
 # guiapp.py
 import pygame
 import time
+import tkinter
+import numpy
+#above commands are to import python modules into the code
+#gurdit
 pygame.font.init()
 
 

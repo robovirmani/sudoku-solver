@@ -1,6 +1,10 @@
 # guiapp.py
 import pygame
 import time
+import numpy as np
+# tanay 
+import PIL
+print("hello")
 pygame.font.init()
 
 

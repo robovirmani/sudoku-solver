@@ -1,6 +1,12 @@
 # guiapp.py
 import pygame
 import time
+
+# Nimat Gill (NG)
+# new edit 1
+# new edit 2
+# this project is so cool!
+
 pygame.font.init()
 
 

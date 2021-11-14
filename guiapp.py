@@ -1,6 +1,8 @@
 # guiapp.py
 import pygame
 import time
+#FIRSTCHANGE
+#TUSHARSINGHANAND
 pygame.font.init()
 
 
@@ -116,7 +118,7 @@ class Grid:
 
                 if self.solve():
                     return True
-
+        
                 self.model[row][col] = 0
 
         return False

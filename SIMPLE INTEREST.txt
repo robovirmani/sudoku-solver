@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+float P,T,R;
+printf("Enter the rate of interest");
+scanf("%f",&R);
+printf("\nEnter the principle amount P(in Rs)");
+scanf("%f",&P);
+printf("\nEnter the time T(in years))");
+scanf("%f",&T);
+float C=P*pow((1+R/100),T);
+printf("The CI of the given amount %f , rate %f and time %f is %f",P,R,T,C);
+
+}

@@ -3,6 +3,8 @@ import pygame
 import time
 pygame.font.init()
 
+# sanya
+print("hello")
 
 class Grid:
     board = [

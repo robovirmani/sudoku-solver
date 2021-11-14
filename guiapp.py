@@ -1,9 +1,12 @@
 # guiapp.py
 import pygame
 import time
+print ("hello")
+#bhanvi
 pygame.font.init()
-
-
+#heyyyy
+#woahhh
+print("hello")
 class Grid:
     board = [
         [7, 8, 0, 4, 0, 0, 1, 2, 0],
@@ -27,7 +30,7 @@ class Grid:
         self.update_model()
         self.selected = None
         self.win = win
-
+   %njsajnj
     def update_model(self):
         self.model = [[self.cubes[i][j].value for j in range(self.cols)] for i in range(self.rows)]
 

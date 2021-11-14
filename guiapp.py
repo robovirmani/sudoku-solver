@@ -1,6 +1,7 @@
 # guiapp.py
 import pygame
 import time
+import game
 pygame.font.init()
 
 

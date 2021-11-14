@@ -287,15 +287,15 @@ def redraw_window(win, board, time, strikes):
 
 
 def format_time(secs):
-    sec = secs%60
-    minute = secs//60
-    hour = minute//60
+    sec = secs%60 #calculating the seconds
+    minute = secs//60 #calculating the minutes
+    hour = minute//60 #calculating number of hours
 
     mat = " " + str(minute) + ":" + str(sec)
-    return mat
+    return mat #returning time format
 
 
-def main():
+def main(): #main function
     win = pygame.display.set_mode((540,600))
     pygame.display.set_caption("Sudoku (Press Space to auto solve) ")
     board = Grid(9, 9, 540, 540, win)
@@ -303,13 +303,13 @@ def main():
     run = True
     start = time.time()
     strikes = 0
-    while run:
+    while run:#starting an infinite loop
 
         play_time = round(time.time() - start)
     
         for event in pygame.event.get():
             
-            if event.type == pygame.QUIT:
+            if event.type == pygame.QUIT:#for exiting
                 run = False
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_1:
@@ -341,14 +341,14 @@ def main():
                     i, j = board.selected
                     if board.cubes[i][j].temp != 0:
                         if board.place(board.cubes[i][j].temp):
-                            print("Success")
+                            print("Success")#printing results
                         else:
-                            print("Wrong")
+                            print("Wrong")#printing results
                             strikes += 1
                         key = None
 
                         if board.is_finished():
-                            print("Game over")
+                            print("Game over")#printing results
 
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()

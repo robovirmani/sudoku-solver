@@ -1,6 +1,11 @@
 # guiapp.py
 import pygame
 import time
+import numpy as np
+# new edit
+import PIL
+print("HELLO")
+# Gurjot Singh 119721
 pygame.font.init()
 
 

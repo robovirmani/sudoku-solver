@@ -1,8 +1,11 @@
 # guiapp.py
 import pygame
 import time
+import numpy as np
+# new edit
+Import PIL
 pygame.font.init()
-
+# Harsh
 
 class Grid:
     board = [

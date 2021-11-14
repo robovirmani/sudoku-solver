@@ -1,7 +1,9 @@
 # guiapp.py
 import pygame
 import time
-pygame.font.init()
+# my name is gurkirat 
+imort numpy # love to play guitar 
+pygame.font.init()  # i am a student at tiet
 
 
 class Grid:

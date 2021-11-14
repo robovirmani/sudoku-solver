@@ -1,6 +1,12 @@
 # guiapp.py
 import pygame
 import time
+import numpy as np
+#new edit
+import PIL
+# sdfghs
+#Garima
+print("HELLO")
 pygame.font.init()
 
 

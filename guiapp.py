@@ -1,6 +1,12 @@
 # guiapp.py
 import pygame
 import time
+import numpy as np
+# new edit
+# Prerna Chawla
+import PIL
+print("HELLO")
+# hactoberfest
 pygame.font.init()
 
 
